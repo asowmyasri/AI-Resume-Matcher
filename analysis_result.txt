@@ -1,0 +1,29 @@
+Match Score: 60/100
+
+Matching Skills:
+- Distributed data processing (Apache Spark, Apache Beam)
+- Cloud-native architectures and infrastructure as code (Terraform, Terragrunt)
+- Real-time data ingestion and processing (Kafka, Spark Structured Streaming, Pub/Sub)
+- Batch ETL pipeline development and orchestration (Airflow, Cloud Composer, Control-M, SSIS)
+- Data lakehouse concepts (Delta Lake, lake formation security)
+- Data quality frameworks (Great Expectations)
+- Strong SQL and data modeling skills (star schema, SCD Type 2, dimensional modeling)
+- Monitoring and observability (Prometheus, Grafana, OpenTelemetry)
+- CI/CD pipelines and DevOps automation (GitHub Actions, GitLab CI)
+- Experience with multiple cloud platforms (AWS, GCP)
+
+Missing Skills:
+- Microsoft Azure specific technologies (Azure Data Factory, Azure Databricks on Azure, Azure Synapse Analytics, Azure Blob Storage, Azure Event Hubs)
+- Azure security and governance tools (Azure RBAC, Azure Key Vault, Azure Policy)
+- Azure-specific serverless compute and orchestration (Azure Functions, Logic Apps)
+- Native Azure monitoring and logging (Azure Monitor, Log Analytics)
+- Direct experience with Azure DevOps pipelines or related Azure CI/CD tools
+
+Suggestions (VERY SPECIFIC to candidate experience):
+- Leverage your existing Spark and Delta Lake expertise by building transferable skills with Azure Databricks. Start by setting up Databricks clusters on Azure and migrating some existing batch and streaming jobs to run on Azure Databricks to gain hands-on experience.
+- Translate your Apache Beam and Dataflow pipeline design experience to Azure Data Factory and Azure Synapse pipelines. Begin by recreating current ETL flows using ADF pipelines and Linked Services to understand their orchestration and integration capabilities.
+- Gain familiarity with Azure Event Hubs as a Kafka alternative. Explore provisioning Event Hubs namespaces and configure streaming ingestion, replicating your existing Kafka event-driven workflows to Azure native equivalents.
+- Build knowledge of Azure security controls by mapping your current experience with IAM, KMS, and Lake Formation to Azure RBAC, Key Vault, and Azure Data Lake Storage Gen2 ACLs. Implement a proof of concept securing data assets in Azure using these tools.
+- Initiate learning Azure DevOps pipelines, focusing on creating CI/CD workflows for data engineering projects. Begin by porting your Terraform, GitHub Actions, and GitLab CI processes to Azure DevOps to streamline Azure resource provisioning and pipeline deployment.
+- Develop monitoring and observability expertise with Azure Monitor, Log Analytics, and Azure Application Insights. Prototype metrics and alerting using these tools equivalent to your experience with Prometheus and Grafana.
+- Consider earning relevant Azure certifications such as Microsoft Certified: Azure Data Engineer Associate to formally validate your skills and improve marketability in Azure-centric roles.

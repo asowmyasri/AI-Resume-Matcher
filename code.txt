@@ -1,0 +1,70 @@
+import os
+from openai import OpenAI
+from dotenv import load_dotenv
+import pdfplumber
+
+# Load API key
+load_dotenv(dotenv_path=".env")
+print("API KEY:", os.getenv("OPENAI_API_KEY"))
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
+def extract_text_from_pdf(file_path):
+    text = ""
+    
+    with pdfplumber.open("Sowmya_Sree_resume_AWS.pdf") as pdf:
+        for page in pdf.pages:
+            text += page.extract_text() or ""
+    
+    return text
+
+
+# Input text (your resume sample)
+resume_text = extract_text_from_pdf("Sowmya_Sree_resume_AWS.pdf")
+print("DEBUG RESUME TEXT:")
+print(resume_text[:1000])
+
+job_description = """
+Looking for a Data Engineer with experience in Python, SQL, Apache Airflow, AWS, and data pipeline development.
+"""
+
+# Prompt
+prompt = f"""
+
+You are an expert AI hiring assistant.
+
+Analyze the RESUME and JOB DESCRIPTION deeply.
+
+Give output STRICTLY in this format:
+
+Match Score: X/100
+
+Matching Skills:
+- ...
+
+Missing Skills:
+- ...
+
+Suggestions (VERY SPECIFIC to candidate experience):
+- Give actionable steps based on current skills
+- Avoid generic advice
+
+RESUME:
+{resume_text}
+
+JOB DESCRIPTION:
+{job_description}
+"""
+
+
+# Call OpenAI
+response = client.chat.completions.create(
+    model="gpt-4.1-mini",
+    messages=[
+        {"role": "user", "content": prompt}
+    ]
+)
+
+# Print output
+print(response.choices[0].message.content)

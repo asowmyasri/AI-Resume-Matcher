@@ -1,0 +1,33 @@
+Match Score: 55/100
+
+Matching Skills:
+- Designing and building scalable data pipelines (Spark Structured Streaming, Apache Beam)
+- Cloud-native data platform experience on AWS and GCP
+- Real-time and batch data ingestion frameworks (Kafka, Pub/Sub, Lambda, EventBridge, Step Functions, Dataflow)
+- Strong programming languages (Python, Scala, SQL, Java)
+- Data modeling (star schema, SCD Type 2, CDC patterns)
+- Orchestration tools (Airflow, Cloud Composer, Control-M)
+- Data governance and quality tools (Great Expectations, Data Catalog, Dataform assertions)
+- Observability (Prometheus, Grafana, OpenTelemetry)
+- Infrastructure as Code (Terraform, Terragrunt)
+- CI/CD automation (GitHub Actions, GitLab CI)
+- Data security and compliance (IAM, KMS, Lake Formation, VPC Service Controls, Secret Manager)
+- Experience with streaming platforms (Kafka, Confluent Schema Registry, Avro)
+- Experience with distributed processing frameworks (Spark, Apache Beam)
+
+Missing Skills:
+- Microsoft Azure platform experience (Azure Data Factory, Azure Synapse Analytics, Azure Databricks, Azure Data Lake Storage)
+- Azure-specific security and management tools (Azure Active Directory, Azure Key Vault, role-based access on Azure)
+- Azure-centric orchestration (Azure Data Factory pipelines, Azure Logic Apps)
+- Experience with Azure streaming services (Azure Event Hubs, Azure Stream Analytics)
+- Familiarity with Microsoft Power BI beyond general BI experience
+- Hands-on experience with Azure DevOps pipelines (for CI/CD)
+
+Suggestions:
+- Gain hands-on experience with core Azure data services, starting with Azure Data Factory for pipeline orchestration and Azure Synapse Analytics for data warehousing. Use Microsoft’s free tiers or sandbox environments for practical learning.
+- Migrate or recreate a small existing ETL pipeline from AWS/GCP to Azure using Azure Data Factory and Azure Databricks to build familiarity with Azure’s interfaces, management, and tooling.
+- Learn to implement security controls and governance in Azure by applying knowledge from AWS IAM and KMS to Azure equivalents like Azure Active Directory and Azure Key Vault via tutorials and labs.
+- Develop CI/CD workflows using Azure DevOps to complement your existing CI/CD knowledge in GitHub Actions and GitLab CI—start with pipeline setup for code deployment on Azure services.
+- Explore Azure Event Hubs and Azure Stream Analytics for building real-time streaming pipelines; prototype a sample Kafka-like event ingestion and processing pipeline in Azure.
+- Highlight transferable skills such as cloud data fabric design, data governance, streaming ingestion, and pipeline orchestration when applying, emphasizing ability to quickly ramp on Azure platforms.
+- Pursue Microsoft certifications such as “Azure Data Engineer Associate” (DP-203) to validate skills and make your profile attractive for Azure-specific roles.
