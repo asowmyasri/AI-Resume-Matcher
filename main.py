@@ -24,7 +24,7 @@ resume_text = extract_text_from_docx(file_name)
 
 job_description = input("Paste job description here: ")
 
-#resume_text = extract_text_from_docx("Sowmya_Sree_resume_AWS.docx")
+#resume_text = extract_text_from_docx("resume_AWS.docx")
 #print("DEBUG RESUME TEXT:")
 #print(resume_text[:1000])
 
